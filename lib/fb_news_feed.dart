@@ -42,7 +42,7 @@ class FbNewsFeed extends StatelessWidget {
           .map(
             (feed) => config.showBorder
                 ? Card(
-                    color: config.borderColor ?? Theme.of(context).accentColor,
+                    color: config.borderColor ?? Theme.of(context).colorScheme.secondary,
                     child: FbNewsFeedLayout(
                       config: config,
                       profilePictureUrl: profilePictureUrl,
